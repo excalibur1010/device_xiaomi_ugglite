@@ -74,6 +74,10 @@ vendor/lib/libseemore.so|8fc2ae17c7364f789bda71b20a2fba006f9568c8
 vendor/lib/libtrueportrait.so|b8e11c098bd859aae6c535cdb87e3e36f6b1c6ef
 vendor/lib/libubifocus.so|833a305c780b2e7e338323c5ba27cb042f5cc3ed
 
+# Camera TNR - from prada (Redmi 4)
+vendor/lib/libllvd_sw_tnr.so
+vendor/lib/libmmcamera_sw_tnr.so
+
 # Camera actuators - from riva - V9.2.4.0.NCKMIEK
 vendor/lib/libactuator_ad5816g.so|3d281ddbc90cea2e05569af8ae20bafac9cab559
 vendor/lib/libactuator_ad5823.so|a62d817f8a250c969eded08b340ed07da6af8a65

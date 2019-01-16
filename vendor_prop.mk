@@ -108,6 +108,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.cpurend.vsync=false \
     debug.gralloc.gfx_ubwc_disable=0 \
     debug.sdm.support_writeback=0 \
+    debug.composition.type=gpu \
     debug.sf.disable_backpressure=1 \
     debug.sf.hw=0 \
     debug.sf.latch_unsignaled=1 \

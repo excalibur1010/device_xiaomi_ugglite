@@ -143,9 +143,6 @@ TARGET_PROVIDES_LIBLIGHT := true
 # Lineage Hardware
 JAVA_SOURCE_OVERLAYS := org.lineageos.hardware|$(DEVICE_PATH)/lineagehw|**/*.java
 
-# Tap2Wake
-TARGET_TAP_TO_WAKE_NODE := "/proc/gesture/onoff"
-
 # Malloc
 MALLOC_SVELTE := true
 
@@ -174,6 +171,7 @@ TARGET_USERIMAGES_USE_F2FS := true
 TARGET_HAS_NO_WLAN_STATS := true
 TARGET_USES_INTERACTION_BOOST := true
 TARGET_HAS_NO_POWER_STATS := true
+TARGET_TAP_TO_WAKE_NODE := "/dev/input/event2"
 
 # Qualcomm support
 BOARD_USES_QCOM_HARDWARE := true

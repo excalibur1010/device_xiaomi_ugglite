@@ -150,6 +150,10 @@ on boot
     mkdir /mnt/product/factory/graphics 0755 root root
     # Modify by AMT.meng.lv,04/2/2019, update "vulkan and opengles issue between 8917 and 8937 chips"'s solution end 
 
+    #sensors log dir
+    mkdir /data/vendor/sensors
+    chown system system /data/vendor/sensors
+
 # msm specific files that need to be created on /data
 on post-fs-data
     mkdir /data/vendor/misc 01771 system system

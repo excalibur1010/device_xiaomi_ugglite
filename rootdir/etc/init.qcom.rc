@@ -384,7 +384,7 @@ service time_daemon /vendor/bin/time_daemon
     capabilities SYS_TIME
     writepid /dev/cpuset/system-background/tasks
 
-service charger /sbin/chargeonlymode
+service vendor.charger /system/bin/chargeonlymode
     class charger
     group system graphics
     seclabel u:r:charger:s0

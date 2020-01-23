@@ -546,11 +546,11 @@ vendor/lib64/libsensor_reg.so|b977629681598d927830ed99986e818c01c2d34a
 vendor/lib64/libsensor_user_cal.so|a9cd76f06c02e23cb7f1552aa7d51567259faa47
 vendor/lib64/sensors.ssc.so|23f60022a6415f0fb644aed853b3ee5dceecd0de
 
-# Thermal - from LA.UM.8.6.r1-03400-89xx.0
-vendor/bin/thermal-engine|e7a2ab9558d8b0516dfe0f5f232126b87cc1748c
--vendor/lib/libthermalclient.so|14593d3551af6ce493b8534d123739cc7d146993
--vendor/lib64/libthermalclient.so|c36b6baf6e82a73e7afaf52589dada5248a69daf
-vendor/lib64/libthermalioctl.so|1d6587245c7e7148638f14254e2f61f6b5552857
+# Thermal - from zb555kl - zb555kl-user-9-PPR1.180610.009-16.00.1906.411-20190712-release-keys
+vendor/bin/thermal-engine|cdce3d9c314b255ac05a4a917d7d3cca5ad4c344
+-vendor/lib/libthermalclient.so|67a691df34cfef504929af69f0442e4d53991da2
+-vendor/lib64/libthermalclient.so|1ed3ad6c6d9ba45b5022b76de11dfa350a501720
+vendor/lib64/libthermalioctl.so|c812ce2a5306a7113c0c0553aa03d8bfe605d727
 
 # Time services - from LA.UM.8.6.r1-03400-89xx.0
 -vendor/app/TimeService/TimeService.apk;:timeservice_app_cert-legacy-um|4a37afd1395758d946580af184a738e3c657b1e2

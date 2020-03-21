@@ -427,32 +427,22 @@ vendor/bin/pm-service|8a521f14576d0d2edf03b4500a54379d37e15d4e
 vendor/lib/libperipheral_client.so|b75a6adac094ddcd6ded9415cae83e18d1e7e5d0
 vendor/lib64/libperipheral_client.so|20c8ab21fe28e41f60b59af0ba72de9f6b1996d2
 
-# Postprocessing - from daisy - PKQ1.180917.001 V10.0.1.0.PDLMIFJ
-vendor/bin/mm-pp-dpps|c281ee28274eeff6273091ae07aa1856a0c160db
-etc/permissions/com.qti.snapdragon.sdk.display.xml|0bff16d681e75f203c1e11ff33afba82490e49b3
-framework/com.qti.snapdragon.sdk.display.jar|db5b8dd09100aab238b5972192f5ab944f38208c
-lib/vendor.display.color@1.0.so|68f3b191767e32ebe6d1e77725d22bfd1152ce14
-lib/vendor.display.postproc@1.0.so|fe3bfd38306d1c5e2c1ba900c18ccc09b9152b61
-lib/vendor.qti.hardware.qdutils_disp@1.0.so|09fb9cae13bf5edb70aa7568c7bf457db7415dc8
-lib64/vendor.display.color@1.0.so|ec75654927c63b74c7f8d0760fa463f0e8287f25
-lib64/vendor.display.postproc@1.0.so|b95e9f990a207d5c62db4d66f5aaf088adc02ba8
-lib64/vendor.qti.hardware.qdutils_disp@1.0.so|de6aade2863c03d5b3e234bf87bd398b8f23b13d
-vendor/bin/hw/vendor.display.color@1.0-service|2dbbb46a62ac5cf8d3a084c8350457442f5741eb
-vendor/bin/hw/vendor.qti.hardware.qdutils_disp@1.0-service-qti|2536d249be2b723821eae12a505c737e2c6f7681
+# Postprocessing - from LA.UM.8.6.r1-02900-89xx.0
+etc/permissions/com.qti.snapdragon.sdk.display.xml|79a36c560f8cdbfeca03911fefc282bda25b2322
+framework/com.qti.snapdragon.sdk.display.jar|495d45dd84a61e873a3d1176ab7741826e60d7f1
+vendor/bin/hw/vendor.display.color@1.0-service|dd461fbbbdc7175b8e1e37eba19bc1c48111b5b6
+vendor/bin/hw/vendor.qti.hardware.qdutils_disp@1.0-service-qti|a25c2cc8a0498b8f3a08770b97e49b5545868eca
+vendor/bin/mm-pp-dpps|5d68b2ae07de96e33d1c1b7698994ec2b219e084
 vendor/etc/init/vendor.display.color@1.0-service.rc|5ad673f879b3685a0e79b5633437e5499cb94f48
 vendor/etc/init/vendor.qti.hardware.qdutils_disp@1.0-service-qti.rc|69d9cbc54f8ac0a0fb010f92bfa7de5981d643cf
-vendor/lib64/libdisp-aba.so|0444e77190b509144d9a6730034c000324703c93
-vendor/lib64/vendor.display.color@1.0.so|ec75654927c63b74c7f8d0760fa463f0e8287f25
-vendor/lib64/vendor.display.color@1.1.so|28dd1ef69ea74f5623746bbac5c483a3f3b46990
-vendor/lib64/vendor.display.color@1.2.so|2c61fe34f1b7548b258812c85920aa82f6b3a8db
-vendor/lib64/vendor.display.postproc@1.0.so|b95e9f990a207d5c62db4d66f5aaf088adc02ba8
-vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so|de6aade2863c03d5b3e234bf87bd398b8f23b13d
-vendor/lib/libdisp-aba.so|1779aa9d99a04db3ab1b5546bd243ba3ecfc1bb5
-vendor/lib/vendor.display.color@1.0.so|68f3b191767e32ebe6d1e77725d22bfd1152ce14
-vendor/lib/vendor.display.color@1.1.so|9fc879923cdf549709fe09913393f4a01af052cb
-vendor/lib/vendor.display.color@1.2.so|88782c36567cf84014710e94630c94217f030fd6
-vendor/lib/vendor.display.postproc@1.0.so|fe3bfd38306d1c5e2c1ba900c18ccc09b9152b61
-vendor/lib/vendor.qti.hardware.qdutils_disp@1.0.so|09fb9cae13bf5edb70aa7568c7bf457db7415dc8
+vendor/lib/libdisp-aba.so|0de85e6fc20afc083ede386fecb90a08ac59117e
+vendor/lib/vendor.display.color@1.0.so|fb26ad8a8093b58484f58176394b2750d2f9a534
+vendor/lib/vendor.display.postproc@1.0.so|4023d0dd9b4c391caa1fcdb59ab9841e42b57aaa
+vendor/lib/vendor.qti.hardware.qdutils_disp@1.0.so|4fb98c658d6e2c624cff498f4af79a2b64aec79a
+vendor/lib64/libdisp-aba.so|8131a967a51959d88006a20b1f12ced0bf075e4c
+vendor/lib64/vendor.display.color@1.0.so|f0af4540df53f4b921af726515beda9a1982c79e
+vendor/lib64/vendor.display.postproc@1.0.so|b492eb78d6f4c32158883b142f5d731706a2f7dc
+vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so|f8a0e23cf538bc6664627ba9ac9efec7cfb34077
 
 # Power-off alarm - from LA.UM.8.6.r1-03400-89xx.0
 -product/app/PowerOffAlarm/PowerOffAlarm.apk|c214e1f7de878aeebe642857d6283bbeca0c7a3e

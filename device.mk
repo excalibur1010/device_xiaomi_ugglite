@@ -171,7 +171,8 @@ PRODUCT_PACKAGES += \
     libcurl \
     libgnss \
     libgnsspps \
-    libwifi-hal-ctrl
+    libwifi-hal-ctrl \
+    libjson
 
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/gps/etc/flp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/flp.conf \

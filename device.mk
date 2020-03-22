@@ -68,7 +68,8 @@ PRODUCT_PACKAGES += \
     audio.usb.default \
     libqcompostprocbundle \
     libqcomvisualizer \
-    libqcomvoiceprocessing
+    libqcomvoiceprocessing \
+    libldacBT_dec
 
 PRODUCT_PACKAGES += \
     android.hardware.audio@2.0-impl \

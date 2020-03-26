@@ -13,13 +13,13 @@ vendor/etc/acdbdata/MTP/msm8952-tasha-snd-card/MTP_WCD9335_Handset_cal.acdb|2af1
 vendor/etc/acdbdata/MTP/msm8952-tasha-snd-card/MTP_WCD9335_Hdmi_cal.acdb|2ac99bd7a0a408303cb532eed06c7347da9aa135
 vendor/etc/acdbdata/MTP/msm8952-tasha-snd-card/MTP_WCD9335_Headset_cal.acdb|ba9f8502cc8c66b5663388c5c487e98f1a2c3234
 vendor/etc/acdbdata/MTP/msm8952-tasha-snd-card/MTP_WCD9335_Speaker_cal.acdb|7832246fd181e8ce254215f7c6fc91d880af357c
-vendor/etc/acdbdata/QRD/QRD_Bluetooth_cal.acdb|526c2ceb63e16ed043317aab9d2337f15454d083
-vendor/etc/acdbdata/QRD/QRD_General_cal.acdb|7580b9bc1285d64f059a30d53628dd81a4aed53e
-vendor/etc/acdbdata/QRD/QRD_Global_cal.acdb|c0620d43324260da22b71b742e588edc0a8166ea
-vendor/etc/acdbdata/QRD/QRD_Handset_cal.acdb|7b2a9898aab0468cad9c2fc674151d43ace8551a
-vendor/etc/acdbdata/QRD/QRD_Hdmi_cal.acdb|39f1d884c5cd40691bc9349bf57372c68269efa2
-vendor/etc/acdbdata/QRD/QRD_Headset_cal.acdb|bf2bec4b1934f7f006ee40359b6186855b400e04
-vendor/etc/acdbdata/QRD/QRD_Speaker_cal.acdb|49d26f0e6530f3f60dbaaa800378c1e57863965c
+vendor/etc/acdbdata/QRD/QRD_Bluetooth_cal.acdb|0364848ae2eb5505bdace46d6b8f1391a39095a8
+vendor/etc/acdbdata/QRD/QRD_General_cal.acdb|af85e877379f5844d8a87dac8187b1416fd89342
+vendor/etc/acdbdata/QRD/QRD_Global_cal.acdb|0ae1d3c0dfd9c27afd030584b233d2f4b454a743
+vendor/etc/acdbdata/QRD/QRD_Handset_cal.acdb|855422d5b156ed60f5f6bacb9458e85f6c67ed12
+vendor/etc/acdbdata/QRD/QRD_Hdmi_cal.acdb|457bd7d412d9359297b9923cee264214d013547a
+vendor/etc/acdbdata/QRD/QRD_Headset_cal.acdb|ba8ab21912dd9a8c41014f6c26f2dca6d4476fdf
+vendor/etc/acdbdata/QRD/QRD_Speaker_cal.acdb|b1a9a1497d1ecfab01e8a59d4c33410d409753a3
 vendor/etc/acdbdata/QRD/msm8917-tmo-snd-card/QRD_TMO_Bluetooth_cal.acdb|d70aacb77d77a08a780fda950a48532f7942f400
 vendor/etc/acdbdata/QRD/msm8917-tmo-snd-card/QRD_TMO_General_cal.acdb|11cccfb32049008f0b07e25ab618bf027ff2bbc7
 vendor/etc/acdbdata/QRD/msm8917-tmo-snd-card/QRD_TMO_Global_cal.acdb|ffb84f127513f0cd6f88bc41e01d77b19cab326c
@@ -75,8 +75,8 @@ vendor/lib/libtrueportrait.so|b8e11c098bd859aae6c535cdb87e3e36f6b1c6ef
 vendor/lib/libubifocus.so|833a305c780b2e7e338323c5ba27cb042f5cc3ed
 
 # Camera TNR - from prada (Redmi 4)
-vendor/lib/libllvd_sw_tnr.so
-vendor/lib/libmmcamera_sw_tnr.so
+vendor/lib/libllvd_sw_tnr.so|fcdcf57426014ff9d29f394ada26a6fd830dc6e3
+vendor/lib/libmmcamera_sw_tnr.so|6b20dab49ea83f84afed555d9b60595a4c380e16
 
 # Camera actuators - from riva - V9.2.4.0.NCKMIEK
 vendor/lib/libactuator_ad5816g.so|3d281ddbc90cea2e05569af8ae20bafac9cab559
@@ -102,9 +102,9 @@ vendor/lib/libactuator_pseudo.so|04d831577abece59ae051042bddac6f430ebd724
 vendor/lib/libactuator_rohm_bu64243gwz.so|bac8fcf1b40432af9459d804d70fc2afb094f210
 
 # Camera chromatix - from riva - V9.2.4.0.NCKMIEK
-bin/mm-qcamera-app:vendor/bin/mm-qcamera-app|c7ba621a7bd86790e7e0f2cd476ef26782ec9a1b
+bin/mm-qcamera-app:vendor/bin/mm-qcamera-app|ae879389216910d93bf3661e9c7ef3b56a545397
 bin/mm-qcamera-daemon:vendor/bin/mm-qcamera-daemon|ac9b9fd8d4c2a93e10c461b62677454f22d760ab
-vendor/etc/camera/camera_config.xml|a9285443851f58b0f0eae003e0b80c9cf410f6d8
+vendor/etc/camera/camera_config.xml|5df82c76aa8969f29c4556ddf3a7370c76e4d938
 vendor/etc/camera/csidtg_camera.xml|406e2dec13dc910415ff72fc5a7ee084c97ab61f
 vendor/etc/camera/csidtg_chromatix.xml|bf4b37d8dd850ebb6bda8c5ebdd427cdb5515f35
 vendor/etc/camera/imx214_chromatix.xml|c27c3a806a18dfa693c186dbf5fdf48f715acacb
@@ -1906,8 +1906,8 @@ product/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
 product/lib64/libaptXHD_encoder.so|e13fa70c97caaa24d061678bdee608eb8850a69e
 
 # Consumer IR - from rolex
-vendor/lib/hw/consumerir.default.so:vendor/lib/hw/consumerir.default.so|b2e014de968f65e013b4dae3fad67f16aa3b0a09
-vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.default.so|bed46204c8200d5f0ec1b37c14ecbc06f424db93
+vendor/lib/hw/consumerir.default.so:vendor/lib/hw/consumerir.default.so|53830d64d63d6cc405209d8d4cafea102dcd7b54
+vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.default.so|d5145eb1712c8e0895016282f3e348c98ad17f7b
 
 # Display calibration
 vendor/etc/qdcm_calib_data_hx8394F_HD720p_video_BOE_c3a.xml:vendor/etc/qdcm_calib_data_hx8394F_HD720p_video_BOE_c3a.xml
@@ -1922,5 +1922,5 @@ vendor/firmware/a330_pm4.fw:vendor/firmware/a330_pm4.fw|ae739ea812f9e4462d7bba8b
 
 
 # Graphics(adreno308) - from zb555kl - PKQ1.181203.001-16.0200.1907.18-20190817
-vendor/lib/egl/eglsubAndroid.so
-vendor/lib64/egl/eglsubAndroid.so
+vendor/lib/egl/eglsubAndroid.so|cc06179ab6cf16adb9e50aff864a049c541c95cb
+vendor/lib64/egl/eglsubAndroid.so|39c1fbd2103804faea0451e42e9f03b6e3dea027

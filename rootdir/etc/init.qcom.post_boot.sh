@@ -443,7 +443,8 @@ else
 
         # Calculate vmpressure_file_min as below & set for 64 bit:
         # vmpressure_file_min = last_lmk_bin + (last_lmk_bin - last_but_one_lmk_bin)
-	    minfree_series='2560,4090,6144,7168,8192,9012'
+        if [ "$arch_type" == "aarch64" ]; then
+            minfree_series=`cat /sys/module/lowmemorykiller/parameters/minfree`
             minfree_1="${minfree_series#*,}" ; rem_minfree_1="${minfree_1%%,*}"
             minfree_2="${minfree_1#*,}" ; rem_minfree_2="${minfree_2%%,*}"
             minfree_3="${minfree_2#*,}" ; rem_minfree_3="${minfree_3%%,*}"
@@ -452,6 +453,16 @@ else
 
             vmpres_file_min=$((minfree_5 + (minfree_5 - rem_minfree_4)))
             echo $vmpres_file_min > /sys/module/lowmemorykiller/parameters/vmpressure_file_min
+        else
+            # Set LMK series, vmpressure_file_min for 32 bit non-go targets.
+            # Disable Core Control, enable KLMK for non-go 8909.
+            if [ "$ProductName" == "msm8909" ]; then
+                disable_core_ctl
+                echo 1 > /sys/module/lowmemorykiller/parameters/enable_lmk
+            fi
+        echo "15360,19200,23040,26880,34415,43737" > /sys/module/lowmemorykiller/parameters/minfree
+        echo 53059 > /sys/module/lowmemorykiller/parameters/vmpressure_file_min
+        fi
 
         # Enable adaptive LMK for all targets &
         # use Google default LMK series for all 64-bit targets >=2GB.

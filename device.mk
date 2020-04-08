@@ -15,9 +15,7 @@
 # limitations under the License.
 #
 
-PRODUCT_SOONG_NAMESPACES += \
-    device/xiaomi/rolex \
-    vendor/xiaomi
+PRODUCT_SOONG_NAMESPACES += device/xiaomi/rolex
 
 DEVICE_PATH := device/xiaomi/rolex
 

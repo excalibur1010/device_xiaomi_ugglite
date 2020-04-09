@@ -267,6 +267,10 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/perf/targetresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/targetresourceconfigs.xml \
     $(DEVICE_PATH)/configs/perf/commonresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/commonresourceconfigs.xml
 
+# Non lineage stuffs usefull for roms based on caf sources
+ifeq ($(TARGET_INCLUDE_BOOST_FRAMEWORKS), true)
+$(call inherit-product, $(DEVICE_PATH)/perf/perf-vendor.mk)
+endif
 
 # Permissions
 PRODUCT_COPY_FILES += \

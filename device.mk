@@ -269,7 +269,7 @@ PRODUCT_COPY_FILES += \
 
 # Non lineage stuffs usefull for roms based on caf sources
 ifeq ($(TARGET_INCLUDE_BOOST_FRAMEWORKS), true)
-$(call inherit-product, $(DEVICE_PATH)/perf/perf-vendor.mk)
+$(call inherit-product, vendor/xiaomi/rolex/perf/perf-vendor.mk)
 endif
 
 # Permissions
